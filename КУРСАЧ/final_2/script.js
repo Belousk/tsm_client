@@ -47,9 +47,9 @@ btnScrollTo.addEventListener('click', function (e) {
   console.log('Current scroll (X/Y)', window.pageXOffset, window.pageYOffset);
 
   console.log(
-    'height/width viewport',
-    document.documentElement.clientHeight,
-    document.documentElement.clientWidth
+      'height/width viewport',
+      document.documentElement.clientHeight,
+      document.documentElement.clientWidth
   );
 
   // Scrolling
@@ -110,8 +110,8 @@ tabsContainer.addEventListener('click', function (e) {
 
   // Activate content area
   document
-    .querySelector(`.operations__content--${clicked.dataset.tab}`)
-    .classList.add('operations__content--active');
+      .querySelector(`.operations__content--${clicked.dataset.tab}`)
+      .classList.add('operations__content--active');
 });
 
 ///////////////////////////////////////
@@ -219,25 +219,25 @@ const slider = function () {
   const createDots = function () {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
-        'beforeend',
-        `<button class="dots__dot" data-slide="${i}"></button>`
+          'beforeend',
+          `<button class="dots__dot" data-slide="${i}"></button>`
       );
     });
   };
 
   const activateDot = function (slide) {
     document
-      .querySelectorAll('.dots__dot')
-      .forEach(dot => dot.classList.remove('dots__dot--active'));
+        .querySelectorAll('.dots__dot')
+        .forEach(dot => dot.classList.remove('dots__dot--active'));
 
     document
-      .querySelector(`.dots__dot[data-slide="${slide}"]`)
-      .classList.add('dots__dot--active');
+        .querySelector(`.dots__dot[data-slide="${slide}"]`)
+        .classList.add('dots__dot--active');
   };
 
   const goToSlide = function (slide) {
     slides.forEach(
-      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+        (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
   };
 
@@ -335,10 +335,10 @@ document
     message.parentElement.removeChild(message);
   });
 
-  
+
 ///////////////////////////////////////
 // Styles, Attributes and Classes
-  
+
 // Styles
 message.style.backgroundColor = '#37383d';
 message.style.width = '120%';

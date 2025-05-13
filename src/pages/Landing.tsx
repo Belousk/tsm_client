@@ -2,6 +2,7 @@ import './Landing.css';
 import logo from '../assets/logo.png';
 import hero from '../assets/hero.png';
 import Section1 from "./Section1.tsx";
+import Section2 from "./Section2.tsx";
 const Landing = () => {
     return (
         <>
@@ -50,83 +51,9 @@ const Landing = () => {
                 </div>
             </header>
 
-            <Section1 />
+            <Section1/>
 
-            <section className="section" id="section--2">
-                <div className="section__title">
-                    <h2 className="section__description">Операции</h2>
-                    <h3 className="section__header">
-                        Все довольно таки просто, но не проще
-                    </h3>
-                </div>
-
-                <div className="operations">
-                    <div className="operations__tab-container">
-                        <button
-                            className="btn operations__tab operations__tab--1 operations__tab--active"
-                            data-tab="1"
-                        >
-                            <span>01</span>Мгновенные переводы
-                        </button>
-                        <button className="btn operations__tab operations__tab--2" data-tab="2">
-                            <span>02</span>Быстрая выдача кридита
-                        </button>
-                        <button className="btn operations__tab operations__tab--3" data-tab="3">
-                            <span>03</span>Мгновенное закрытие
-                        </button>
-                    </div>
-                    <div
-                        className="operations__content operations__content--1 operations__content--active"
-                    >
-                        <div className="operations__icon operations__icon--1">
-                            <svg>
-                                <use xlink:href="img/icons.svg#icon-upload"></use>
-                            </svg>
-                        </div>
-                        <h5 className="operations__header">
-                            Переводи деньги другому мгновенно! Без коммисии
-                        </h5>
-                        <p>
-                            С картой ТСМ Банк ваши переводы происходят за секунды — без скрытых платежей и
-                            дополнительных комиссий. Отправляйте деньги друзьям, оплачивайте покупки или пополняйте
-                            счета моментально. Быстро, удобно и бесплатно! Оформите карту и пользуйтесь выгодами уже
-                            сегодня!
-                        </p>
-                    </div>
-
-                    <div className="operations__content operations__content--2">
-                        <div className="operations__icon operations__icon--2">
-                            <svg>
-                                <use xlink:href="img/icons.svg#icon-home"></use>
-                            </svg>
-                        </div>
-                        <h5 className="operations__header">
-                            Купи дом или исполни свою мечту! Кредит оформляется быстро
-                        </h5>
-                        <p>
-                            С картой ТСМ Банк оформить кредит — легко и быстро. Минимум документов, прозрачные условия и
-                            выгодные ставки. Хотите новую квартиру, путешествие или запуск бизнеса? Мы поможем воплотить
-                            ваши мечты в реальность. Подайте заявку и получайте деньги без ожиданий!
-                        </p>
-                    </div>
-                    <div className="operations__content operations__content--3">
-                        <div className="operations__icon operations__icon--3">
-                            <svg>
-                                <use xlink:href="img/icons.svg#icon-user-x"></use>
-                            </svg>
-                        </div>
-                        <h5 className="operations__header">
-                            Закрывайте счет легко — без визита в банк!
-                        </h5>
-                        <p>
-                            ТСМ Банк ценит ваше время. Если счет больше не нужен, просто закройте его в приложении за
-                            пару кликов. Без очередей, бумажной волокиты и скрытых условий. Управляйте своими финансами
-                            свободно — оформите карту и забудьте о лишних хлопотах!
-                        </p>
-                    </div>
-                </div>
-            </section>
-
+            <Section2/>
             <section className="section" id="section--3">
                 <div className="section__title section__title--testimonials">
                     <h2 className="section__description">Всё ещё не уверены?</h2>
@@ -259,7 +186,7 @@ const Landing = () => {
             </div>
             <div className="overlay hidden"></div>
         </>
-);
+    );
 };
 
 export default Landing;
