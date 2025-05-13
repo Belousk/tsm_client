@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import './Slider.css';
+
 import user_1 from "../assets/user-1.jpg"
 import user_2 from "../assets/user-2.jpg"
 import user_3 from "../assets/user-3.jpg"
