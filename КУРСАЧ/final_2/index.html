@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="src/assets/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ТСМ Банк | When Banking meets Minimalist</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+
+  <header class="header">
+    <nav class="nav">
+      <img
+              src="src/assets/logo.png"
+              alt="TSM logo"
+              class="nav__logo"
+              id="logo"
+              data-version-number="3.0"
+      />
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#section--1">Преимущества</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--2">Операции</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--3">Отзывы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--btn btn--show-modal" href="#"
+          >Открыть счет</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__title">
+      <!-- <h1 onclick="alert('HTML alert')"> -->
+      <h1>
+        Когда
+        <!-- Green highlight effect -->
+        <span class="highlight">управление счетом</span>
+        становится<br />
+        <span class="highlight">удобно</span>
+      </h1>
+      <h4>Простой в использовании банк для обычной жизни</h4>
+      <button class="btn--text btn--scroll-to">Узнать больше &DownArrow;</button>
+      <img
+              src="img/hero.png"
+              class="header__img"
+              alt="Minimalist bank items"
+      />
+    </div>
+  </header>
+
+  <section class="section" id="section--1">
+    <div class="section__title">
+      <h2 class="section__description">Преимущества</h2>
+      <h3 class="section__header">
+        Все что нужно в современном банке и не только
+      </h3>
+    </div>
+
+    <div class="features">
+      <img
+              src="img/digital-lazy.jpg"
+              data-src="img/digital.jpg"
+              alt="Computer"
+              class="features__img lazy-img"
+      />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-monitor"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">100% цифровой банк</h5>
+        <p>
+          ТСМ Банк — полностью цифровой, без отделений и бумажной волокиты. Управляйте финансами из любой точки мира через удобное мобильное приложение. Открывайте счета, переводите деньги, инвестируйте — всё быстро, безопасно и без лишних затрат!
+        </p>
+      </div>
+
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-trending-up"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Смотри как твои деньги растут</h5>
+        <p>
+          Инвестируйте с умом и наблюдайте, как ваш капитал увеличивается. ТСМ Банк предлагает выгодные депозиты, автоматизированные инвестиции и аналитические инструменты. Ваши деньги работают на вас, принося прибыль каждый день — без лишних усилий!
+        </p>
+      </div>
+      <img
+              src="img/grow-lazy.jpg"
+              data-src="img/grow.jpg"
+              alt="Plant"
+              class="features__img lazy-img"
+      />
+
+      <img
+              src="img/card-lazy.jpg"
+              data-src="img/card.jpg"
+              alt="Credit card"
+              class="features__img lazy-img"
+      />
+      <div class="features__feature">
+        <div class="features__icon">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-credit-card"></use>
+          </svg>
+        </div>
+        <h5 class="features__header">Бесплатная дебитовая карта включена</h5>
+        <p>
+          Открывая счет в ТСМ Банк, вы сразу получаете бесплатную дебетовую карту. Снимайте наличные, оплачивайте покупки по всему миру и управляйте финансами через приложение. Без скрытых комиссий — только удобство и свобода ваших платежей!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section--2">
+    <div class="section__title">
+      <h2 class="section__description">Операции</h2>
+      <h3 class="section__header">
+        Все довольно таки просто, но не проще
+      </h3>
+    </div>
+
+    <div class="operations">
+      <div class="operations__tab-container">
+        <button
+                class="btn operations__tab operations__tab--1 operations__tab--active"
+                data-tab="1"
+        >
+          <span>01</span>Мгновенные переводы
+        </button>
+        <button class="btn operations__tab operations__tab--2" data-tab="2">
+          <span>02</span>Быстрая выдача кридита
+        </button>
+        <button class="btn operations__tab operations__tab--3" data-tab="3">
+          <span>03</span>Мгновенное закрытие
+        </button>
+      </div>
+      <div
+              class="operations__content operations__content--1 operations__content--active"
+      >
+        <div class="operations__icon operations__icon--1">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-upload"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Переводи деньги другому мгновенно! Без коммисии
+        </h5>
+        <p>
+          С картой ТСМ Банк ваши переводы происходят за секунды — без скрытых платежей и дополнительных комиссий. Отправляйте деньги друзьям, оплачивайте покупки или пополняйте счета моментально. Быстро, удобно и бесплатно! Оформите карту и пользуйтесь выгодами уже сегодня!
+        </p>
+      </div>
+
+      <div class="operations__content operations__content--2">
+        <div class="operations__icon operations__icon--2">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-home"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Купи дом или исполни свою мечту! Кредит оформляется быстро
+        </h5>
+        <p>
+          С картой ТСМ Банк оформить кредит — легко и быстро. Минимум документов, прозрачные условия и выгодные ставки. Хотите новую квартиру, путешествие или запуск бизнеса? Мы поможем воплотить ваши мечты в реальность. Подайте заявку и получайте деньги без ожиданий!
+        </p>
+      </div>
+      <div class="operations__content operations__content--3">
+        <div class="operations__icon operations__icon--3">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-user-x"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Закрывайте счет легко — без визита в банк!
+        </h5>
+        <p>
+          ТСМ Банк ценит ваше время. Если счет больше не нужен, просто закройте его в приложении за пару кликов. Без очередей, бумажной волокиты и скрытых условий. Управляйте своими финансами свободно — оформите карту и забудьте о лишних хлопотах!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section--3">
+    <div class="section__title section__title--testimonials">
+      <h2 class="section__description">Всё ещё не уверены?</h2>
+      <h3 class="section__header">
+        Миллионы пользователей уже сделали свою жизнь проще.
+      </h3>
+    </div>
+
+    <div class="slider">
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">Лучшее финансовое решение в жизни</h5>
+          <blockquote class="testimonial__text">
+            Всегда забывал кошелек дома и не мог оплатить покупки. С картой ТСМ Банк проблема решена
+            — все платежи через смартфон, плюс кешбэк и отсутствие комиссий. Теперь финансы под контролем,
+            а покупки — в один клик. Удобно, быстро, без лишних забот!
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Раскольников Родион</h6>
+            <p class="testimonial__location">Санкт-Петербург, Россия</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">
+            Последня ступень к минималистичности
+          </h5>
+          <blockquote class="testimonial__text">
+            Куча карт, счета в разных банках — полный хаос! Перешел в ТСМ Банк, получил одну универсальную карту и забыл о лишнем. Всё в одном приложении, переводы без комиссий, удобный контроль расходов. Минимум лишнего — максимум удобства!
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Флорентиец</h6>
+            <p class="testimonial__location">Гималаи, Восток/p>
+          </address>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <h5 class="testimonial__header">
+            Наконец свобода от старомодных банков
+          </h5>
+          <blockquote class="testimonial__text">
+            Устал от долгих очередей и запутанных условий? С ТСМ Банк всё просто — быстрая регистрация, мгновенные переводы без комиссий и управление финансами прямо в телефоне. Старомодные банки остались в прошлом, теперь только удобство и свобода!
+          </blockquote>
+          <address class="testimonial__author">
+            <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+            <h6 class="testimonial__name">Хэнк Риарден</h6>
+            <p class="testimonial__location">Филадельфия, США</p>
+          </address>
+        </div>
+      </div>
+
+      <button class="slider__btn slider__btn--left">&larr;</button>
+      <button class="slider__btn slider__btn--right">&rarr;</button>
+      <div class="dots"></div>
+    </div>
+  </section>
+
+  <section class="section section--sign-up">
+    <div class="section__title">
+      <h3 class="section__header">
+        Лучший день когда можно было присоединиться к ТСМ Банку был год назад! Но второй сегодня
+      </h3>
+    </div>
+    <button class="btn btn--show-modal">Откройте свой бесплатный счет сегодня!</button>
+  </section>
+
+  <footer class="footer">
+    <ul class="footer__nav">
+      <li class="footer__item">
+        <a class="footer__link" href="#">О компании</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Расценки</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Положения</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Правила конфедециальности</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Карьера</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Блог</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Свяжитесь с нами</a>
+      </li>
+    </ul>
+    <img src="img/icon.png" alt="Logo" class="footer__logo" />
+    <p class="footer__copyright">
+      &copy; Copyright by
+      <a
+              class="footer__link twitter-link"
+              target="_blank"
+              href="https://twitter.com/jonasschmedtman"
+      >Jonas Schmedtmann</a
+      >. Use for learning or your portfolio. Don't use to teach. Don't claim
+      as your own product.
+    </p>
+  </footer>
+
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+      Откройте свой счет <br />
+      всего лишь за <span class="highlight">5 минут</span>
+    </h2>
+    <form class="modal__form">
+      <label>First Name</label>
+      <input type="text" />
+      <label>Last Name</label>
+      <input type="text" />
+      <label>Email Address</label>
+      <input type="email" />
+      <button class="btn">Next step &rarr;</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
